@@ -1,0 +1,7 @@
+.poop img{
+    width: 304px; height: 304px;
+    border-style: dashed; border-radius: 15px;
+}
+.poop{
+    display: none;
+}

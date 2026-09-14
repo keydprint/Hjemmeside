@@ -1,0 +1,7 @@
+15.03.2026
+i have alot of notes for this project
+yeah this is gonna be my big homepage, 
+24.03.2026
+i experimented today with "big.js" and "big.html" and came to find out that Style had a big S which is illegal in Javascript so i learned something today
+25.03.2026
+i've been adding some content 

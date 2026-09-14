@@ -1,0 +1,132 @@
+/*Minipages layout 
+
+(1) Dette er en proffesjonel dokumentering av utleie
+Viktige ting:
+    (A1)Navigering
+    (B1)Sidens innhold beskrivelse
+    (C1)Bilder
+    (D1)Innhold i seksjoner
+
+
+
+(2) her er klassene
+    (A2).border - placeholder som viser hvor stor helheten ser ut
+    (B2).topnav - Jeg foretrekker at nettsiden kan navigeres fra toppen
+    (C2).bTjue - 20%, .bForti - 40%, bSexti - 60%, bAtti - 80%, bHundre - 100%
+        ^< 100 er default, ellers legger jeg til klassen for noe annet.
+    (D2).nopad - fjern padding, nomarg - fjern margin
+
+
+(3) annet
+    (A3) div
+        padding = 1rem margin = 0.5rem
+    (B3) Skrift
+*/
+
+
+/* 2:
+A2:none eller solid*/
+.border{
+    border-style: ridge;
+}
+/*B2:*/
+.topnav{
+    justify-content: left;
+    left: 0;
+    background-color: #006BB2;
+    color: #ffff;
+    margin: auto;
+    display: flex;
+    z-index: 1000;
+    padding: .5rem 1rem;
+}
+.navlinks{
+    display: flexbox;
+}
+
+/*C2:*/
+.bTjue{width: 20%;} .bForti{width: 40%;} .bSexti{width: 60%;} .bAtti{width: 80%;} .bHundre{width: 100%;}
+/*D2:*/
+.nopad{padding: 0;} .nomarg{margin: 0;}
+
+/*3:
+A3: */
+div{
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+}
+h1{font-size: 3rem;}
+h2{font-size: 2.5rem;}
+h3{font-size: 2.0rem;}
+p{font-size: 1.5rem;}
+span{
+    font-weight: bolder;
+}
+.topnav a{font-size: 1.5rem; margin-left: 1vw;}
+
+.topnav p, .topnav h1, .topnav h2, .topnav a{
+    color: #ffff; margin-left: 1vw;
+}
+.topnav img{
+    width:  3rem; height: 3rem; margin: auto; margin-left: 1vw; border-radius: 1vw;
+}
+body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: #f4f4f4;}
+
+/*images*/
+/*1. wide sheets*/
+.imghundre{
+    padding: 0; align-items: last baseline; display: flex;
+    
+}
+.img{
+    background-color: black; height: 24vw; margin-top: 1rem;
+}
+.img img{
+    height: 24.8vw;
+    border-style: none; border-color: #b2aeb9;
+}
+.nav-toggle{
+    display: flex; justify-content: left; align-items: center; cursor: pointer;
+}
+/*Custom features, organize and intergrate this*/
+        .menu {
+            position: fixed;
+            background: white;
+
+
+            display: flex;
+            
+            
+
+            opacity: 0;
+            transform: translateY(-10px) scale(0.95);
+            pointer-events: none;
+
+            transition:
+                opacity 0.25s,
+                transform 0.25s;
+        }
+
+        .menu.active {
+            opacity: 1;
+            transform: translateX(1) scale(1);
+            pointer-events: auto;
+        }
+                .menu a {
+            
+            transition: background 0.2s;
+        }
+
+        .menu a:hover {
+            background: #f0f0f0;
+        }
+        #menuBtn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #0078d7;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }

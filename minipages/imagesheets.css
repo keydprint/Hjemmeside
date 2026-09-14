@@ -1,0 +1,12 @@
+/*1. wide sheets*/
+.imghundre{
+    padding: 0; align-items: last baseline; display: flex;
+    
+}
+.img{
+    background-color: black; height: 24vw; margin-top: 1rem;
+}
+.img img{
+    height: 24.8vw;
+    border-style: none; border-color: #b2aeb9;
+}

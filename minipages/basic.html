@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototyp</title>
+    <link rel="stylesheet" href="mpl.css">
+    <link rel="stylesheet" href="imagesheets.css">
+    <link rel="shortcut icon" href="bfcf.png" type="image/x-icon">
+</head>
+<body>
+    <div class="bHundre topnav nopad nomarg">
+        <img src="bfcf.png" alt="">
+        <img src="logoPH.png" alt="logo">
+        <div class="nav-toggle" onclick="toggleNav()">navigering</div>
+        <div id="navLinks">
+            <a href="#one">content </a>
+            <a href="#two">seksjon 1 </a>
+            <a href="#three">seksjon 2 </a>
+        </div>
+    </div>
+    <section id="one"></section>
+    <div class="bSexti border">
+        <h1>BFCF</h1>
+        <h2>Best Fake Chicken Forever</h2>
+        <p>
+        <span>Velkommen til BFCF's offisielle nettside utleie.</span> <br>
+        Hei. Jeg er Martin og skaperen av denne prototypen. 
+        Tidligere har nettsidene mine krevd mye grunnleggende arbeid. 
+        Dette prosjektet handler om å unngå de tunge første stegene og å prioritere innhold. 
+        <br> <span>Hvilke ting må erstattes?</span> Hovedsakelig farger, bilder og tekst. Dette betyr at mest sannsynlig alt må erstattes, bortsett fra struktureringen</p>
+    </div>
+    <div class="bSexti border">
+        <h2>Bilde formater</h2>
+        <p>
+            <span>Bilder er en viktig del av nettsider. Hvordan skal de brukes her?</span>
+            Vi kan beskrive nettside bilder i to deler, bilder som bakgrunn og bilder som innhold. la meg forklare <br>
+            <span>Bilder som bakgrunn</span> trenger å bryte opp nettsidens generele stil for å fenge en brukers øye uten å være i veien for det vi virkelig ønsker å dele.
+            Derfor dekker
+        </p>
+    </div>
+    <div class="bHundre border imghundre img">
+        <!--bilder | 1*1, 1*2 eller 2*1 anbefalt-->
+        <img src="chickenlong.jpg" alt=""><img src="chickenwide.jpg" alt=""><img src="chickensquare.jpg" alt=""><img src="chickenlong.jpg" alt="">
+    </div>
+    <script>
+        
+function toggleNav(){
+  const nav=document.getElementById("navLinks");
+  nav.style.display = nav.style.display==="none" ? "block":"none";
+}
+    </script>
+</body>
+</html>

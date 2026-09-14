@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKK's hjemmeside</title>
+    <link rel="stylesheet" href="draw.css">
+    
+</head>
+<body>
+
+
+    <div class="topnav">
+        <button id="menuBtn">meny</button>
+        <div class="nav-toggle border bTjue nopad nomarg" 
+        onclick="toggleNav()" >
+
+        <p class="nopad nomarg" 
+        style="display: flex;">Skisset og programmert av: MKK</p>
+
+            <img class="nomarg" 
+            src="y2pic/fisherboy.jpg" 
+            alt="y" 
+            >
+        </div>
+        
+
+        <div id="navLinks" style="border-color: white;">
+
+            <a href=" " >Startside Git</a>
+            <a href="#lenker1">lenke tabell eksempler</a>
+
+        </div>
+    </div>
+    <div class="menu nomarg" id="menu">
+        <p>coolio</p>
+    </div>
+    <div class="bSexti">
+
+        <h1>Velkommen Martin</h1>
+
+        <p>I dette prosjektet skal vi gjøre mye, selv om dette bare er en skisse av det offisielle og langsiktige prosjektet jeg har planlagt her. <br>
+        Nettsiden kommer til å bestå av fotoalbumer, Kildehenvisninger, notatblokker og de største: Mappeorganisering og planlegging av Skole.</p>
+   
+    </div>
+    <div class="bSexti">
+        <h2>Lenke tabell</h2>
+        <p>I konsept så er dette en nettside med praktiske bruk, denne lille tabellen er laget kun fra grunnleggende skisser jeg lagde tidligere. 
+            Ingenting unødvendig lagt til siden selveste utdraget som denne nettsiden stammer fra</p>
+    </div>
+    <section id="lenker1"></section>
+    <div class="nopad border bForti">
+        <a href="https://www.youtube.com/watch?v=_zSkcZhXTzQ&list=RD_zSkcZhXTzQ&start_radio=1">
+            <p class="nomarg">Aphex twin: Avril 14th Tutorial </p>
+        </a>
+    </div>
+    <div class="nopad border bForti"> 
+        <a href="https://www.youtube.com/watch?v=_zSkcZhXTzQ&list=RD_zSkcZhXTzQ&start_radio=1">
+            <p class="nomarg">W3schools: C# - syntax </p>
+        </a>
+    </div>
+    <div class="nopad border bForti"> 
+        <a href="https://www.youtube.com/watch?v=_zSkcZhXTzQ&list=RD_zSkcZhXTzQ&start_radio=1">
+            <p class="nomarg">W3schools: Java - syntax</p>
+        </a>
+    </div>
+    <div class="nopad border bForti"> 
+        <a href="https://www.youtube.com/watch?v=_zSkcZhXTzQ&list=RD_zSkcZhXTzQ&start_radio=1">
+            <p class="nomarg">Aphex twin: Avril 14th Tutorial </p>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    function toggleNav(){
+
+  const nav=document.getElementById("navLinks");
+
+  nav.style.display = nav.style.display==="none" ? "block":"none";
+
+}
+</script>
+<script>
+        const button = document.getElementById("menuBtn");
+        const menu = document.getElementById("menu");
+
+        button.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+        // Lukker menyen hvis man klikker utenfor
+        document.addEventListener("click", (event) => {
+            if (
+                !menu.contains(event.target) &&
+                !button.contains(event.target)
+            ) {
+                menu.classList.remove("active");
+            }
+        });
+    </script>
+</body>
+</html>
