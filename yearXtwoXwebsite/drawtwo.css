@@ -1,0 +1,42 @@
+.topnav #menuBtn, .topnav div{
+    margin-right: 1vw;
+}
+.menu {
+            position: fixed;
+            background: white;
+
+
+            display: flex;
+            
+            
+            opacity: 0;
+            transform: translateX(-1rem) /*scale(0.95)*/;
+            pointer-events: none;
+
+            transition:
+                opacity 1s,
+                /*transform 0.25s;*/
+        }
+
+        .menu.active {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            /*pointer-events: auto;*/
+        }
+                .menu a {
+            
+            transition: background 10;
+        }
+
+        .menu a:hover {
+            background: #f0f0f0;
+        }
+        #menuBtn {
+            font-family: inherit;
+            font-size: inherit;
+            
+            background: #0078d7;
+            color: white;
+            cursor: pointer;
+            
+        }
