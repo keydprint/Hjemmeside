@@ -5,3 +5,35 @@ yeah this is gonna be my big homepage,
 i experimented today with "big.js" and "big.html" and came to find out that Style had a big S which is illegal in Javascript so i learned something today
 25.03.2026
 i've been adding some content 
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      //datatypes
+      String name = "Martin ";
+      int age = 170;
+      
+      // if statement of age
+      if (age < 16) 
+      {
+        Console.WriteLine(name + "is younger than 16");
+      } 
+      else if (age < 18) 
+      {
+        Console.WriteLine(name + "is younger than 18");
+      } 
+      else if (age < 20) 
+      {
+        Console.WriteLine(name + "is younger than 20");
+      } 
+      else 
+      {
+        Console.WriteLine(name + "is very old");
+      }
+    }
+  }
+}

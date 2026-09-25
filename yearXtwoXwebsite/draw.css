@@ -69,7 +69,7 @@ span{
     color: #ffff; margin-left: 1vw;
 }
 .topnav img{
-    width:  3rem; height: 3rem; margin: auto; margin-left: 1vw; border-radius: 1vw;
+    width:  3rem; height: 3rem;       margin: auto; margin-left: 1vw; border-radius: 1vw;
 }
 body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: #f4f4f4;}
 

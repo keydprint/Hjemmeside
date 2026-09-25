@@ -1,0 +1,7 @@
+public class Main {
+  public static void main(String[] args) {
+    int color = 3; // velg et tall å få en farge
+    String[] colors = {"black", "GREEN", "yellow", "orange", "red", "pink", "purple", "blue", "cyan", "turqiose", "gray", "white"};
+    System.out.println(colors[color]);
+  }
+}
